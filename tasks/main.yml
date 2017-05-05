@@ -1,7 +1,6 @@
 ---
 # tasks file for nfs-server
-
-- name: Install the package "foo"
+- name: Install nfs-server
   apt:
     name: "{{item}}"
     state: present
