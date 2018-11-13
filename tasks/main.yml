@@ -2,9 +2,10 @@
 # tasks file for nfs-server
 - name: Install nfs-server
   apt:
-    name: "{{item}}"
+    name: "{{packages}}"
     state: present
-  with_items:
+  vars:
+    packages:
     - nfs-common
     - nfs-kernel-server
 - name: Copy exports file.
