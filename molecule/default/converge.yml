@@ -1,7 +1,12 @@
 ---
 - name: Converge
   hosts: all
-  tasks:
-    - name: "Include ansible-nfs-server"
-      include_role:
-        name: "ansible-nfs-server"
+  vars:
+    ansible_user: ansible
+  roles:
+    - name: "ansible-nfs-server"
+      become: true
+  # tasks:
+  #   - name: "Include ansible-nfs-server"
+  #     include_role:
+  #       name: "ansible-nfs-server"
