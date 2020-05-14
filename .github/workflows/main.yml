@@ -14,11 +14,11 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        version:
-          - "stable"
-          - "edge"
-          - "test"
-          - "nightly"
+        # version:
+        #   - "stable"
+        #   - "edge"
+        #   - "test"
+        #   - "nightly"
         os:
           - ubuntu-18.04
       #   python-version:
@@ -43,5 +43,5 @@ jobs:
         run: yamllint .
       - name: check ansible lint
         run: ansible-lint
-      - name: Run docker ${{matrix.version}} test
-        run: molecule test --scenario-name ${{matrix.version}}
+      - name: Run moleculte test
+        run: molecule test
