@@ -1,6 +1,6 @@
 NFS Server
 =========
-[![Build Status](https://travis-ci.org/FinalDes/ansible-nfs-server.svg?branch=master)](https://travis-ci.org/FinalDes/ansible-nfs-server)
+![Ansible-Test](https://github.com/FinalDes/ansible-nfs-server/workflows/Ansible-Test/badge.svg?branch=master)
 
 Simple NFS Server Setup
 
